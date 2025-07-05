@@ -12,7 +12,6 @@ import { MasterComponent } from './master.component';
   imports: [
     CommonModule,
     MasterRoutingModule,
-
   ]
 })
 export class MasterModule { }

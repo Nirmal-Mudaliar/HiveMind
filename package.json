@@ -33,6 +33,15 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
-    "typescript": "~5.4.2"
+    "typescript": "~5.4.2",
+    "@html-eslint/eslint-plugin": "^0.42.0",
+    "@html-eslint/parser": "^0.42.0",
+    "@smarttools/eslint-plugin-rxjs": "^1.0.20",
+    "@stylistic/eslint-plugin": "^5.1.0",
+    "@angular-eslint/builder": "^20.1.1",
+    "@angular-eslint/eslint-plugin": "^20.1.1",
+    "@angular-eslint/eslint-plugin-template": "^20.1.1",
+    "@angular-eslint/schematics": "^20.1.1",
+    "@angular-eslint/template-parser": "^20.1.1"
   }
 }

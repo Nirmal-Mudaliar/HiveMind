@@ -1,4 +1,5 @@
 import { ChangeDetectionStrategy, Component, isStandalone } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-master',
@@ -8,4 +9,8 @@ import { ChangeDetectionStrategy, Component, isStandalone } from '@angular/core'
   standalone: false,
 })
 export class MasterComponent {
+
+  constructor() {
+
+  }
 }

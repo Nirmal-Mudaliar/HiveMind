@@ -1,7 +1,23 @@
 
-<div class="side-bar">
-  
-</div>
-<div class="content">
-  <router-outlet/>
+<app-header></app-header>
+<div class="container">
+  <div class="side-bar">
+    <button 
+      class="item" 
+      routerLinkActive="active-btn"
+      routerLink="/home"
+    >
+      Home
+    </button>
+    <button 
+      class="item" 
+      routerLinkActive="active-btn"
+      routerLink="/questions"
+    >
+      Questions
+    </button>
+  </div>
+  <div class="content">
+    <router-outlet/>
+  </div>
 </div>

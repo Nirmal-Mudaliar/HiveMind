@@ -1,9 +1,21 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { MasterComponent } from './master.component';
 
 const routes: Routes = [
   {
-    path: ''
+    path: '',
+    component: MasterComponent,
+    children: [
+      {
+        path: 'home',
+        loadChildren: () => import('./modules/home/home.module').then(m => m.HomeModule),
+      },
+      {
+        path: 'questions',
+        loadChildren: () => import('./modules/questions/questions.module').then(m => m.QuestionsModule),
+      },
+    ]
   }
 ];
 

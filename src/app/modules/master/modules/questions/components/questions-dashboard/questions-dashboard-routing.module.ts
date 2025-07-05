@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { QuestionsDashboardComponent } from './questions-dashboard.component';
 
 const routes: Routes = [
   {
     path: '',
-    loadComponent: () => import('./home.component').then(m => m.HomeComponent),
+    component: QuestionsDashboardComponent,
   }
 ];
 
@@ -12,4 +13,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class HomeRoutingModule { }
+export class QuestionsDashboardRoutingModule { }

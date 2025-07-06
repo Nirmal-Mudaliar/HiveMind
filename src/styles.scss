@@ -1,3 +1,4 @@
+@use "./fonts/font.scss" as *;
 @import "primeicons/primeicons.css";
 @import "primeflex/primeflex.css";
 @import "@angular/cdk/overlay-prebuilt.css";
@@ -5,8 +6,11 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: $fontFamily;
+  font-size: $fontSize;
 }
 
 body {
   height: 100vh;
+  overflow: hidden;
 }

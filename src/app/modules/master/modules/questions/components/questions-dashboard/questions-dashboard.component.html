@@ -1,1 +1,6 @@
-<p>questions-dashboard works!</p>
+<div class="header">Latest Questions</div>
+<div class="posts-container">
+  @for (post of sortedPosts(); track $index) {
+    <post [post]="post"></post>
+  }
+</div>

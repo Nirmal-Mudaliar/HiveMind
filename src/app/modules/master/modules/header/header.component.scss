@@ -1,11 +1,32 @@
 :host {
-  display: flex;
-  background: #6b2ec0;
-  justify-content: space-between;
-  padding: 10px;
-  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 16px;
+  z-index: 1;
+  width: 100%;
 
-  .app-name {
-    font-weight: 600;
+  .toolbar-container {
+    display: flex;
+    height: 60px;
+    width: calc(100% - 32px);
+    padding: 0 2px 2px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0 0 20px #64646440;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background: linear-gradient(93.15deg, #ff5cea80 21.19%, #8221ea80 102.61%);
+
+    .toolbar-inner-container {
+      flex: 0 0 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      padding: 0 16px;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      background: #fff;
+    }
   }
 }

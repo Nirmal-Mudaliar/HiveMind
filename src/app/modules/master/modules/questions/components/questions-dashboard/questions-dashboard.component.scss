@@ -9,4 +9,11 @@
     font-weight: 600;
     font-size: xx-large;
   }
+
+  .posts-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow: auto;
+  }
 }

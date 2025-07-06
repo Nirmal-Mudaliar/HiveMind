@@ -1,4 +1,7 @@
 <div class="container">
-  <a class="title" >{{post().title}}</a>
+  <div class="post-header">
+    <a class="title" [routerLink]="post().id">{{post().title}}</a>
+    <div class="last-modified-date">{{post().lastModifiedDate | date}}</div>
+  </div>
   <div class="description">{{post().description}}</div>
 </div>

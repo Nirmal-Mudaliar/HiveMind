@@ -6,8 +6,35 @@
   gap: 10px;
 
   .header {
-    font-weight: 600;
-    font-size: xx-large;
+    display: flex;
+    justify-content: space-between;
+
+    .left-container {
+      font-weight: 600;
+      font-size: xx-large;
+    }
+
+    .right-container {
+      display: flex;
+
+      .add-post-btn {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        padding: 0px 12px;
+        border-radius: 6px;
+        border: none;
+        background: #000;
+        color: #fff;
+        font-weight: 600;
+
+        svg {
+          .icon-stroke {
+            stroke: #fff;
+          }
+        }
+      }
+    }
   }
 
   .posts-container {

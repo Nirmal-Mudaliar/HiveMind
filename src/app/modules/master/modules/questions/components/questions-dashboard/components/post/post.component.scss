@@ -7,9 +7,18 @@
     border-radius: 6px;
     gap: 20px;
 
-    .title {
+    .post-header {
       display: flex;
-      font-weight: 600;
+      justify-content: space-between;
+
+      .title {
+        display: flex;
+        font-weight: 600;
+      }
+
+      .last-modified-date {
+        color: #000;
+      }
     }
 
     .description {

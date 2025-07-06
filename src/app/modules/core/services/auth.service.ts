@@ -10,7 +10,7 @@ export class AuthService {
 
   isAuthenticated(): Observable<boolean> {
     // TODO: Get the value from the state
-    return of(false).pipe(
+    return of(true).pipe(
       delay(100),
     )
   }

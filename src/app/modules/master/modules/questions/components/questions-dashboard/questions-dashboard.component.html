@@ -1,6 +1,23 @@
-<div class="header">Latest Questions</div>
+<div class="header">
+  <div class="left-container">Latest Questions</div>
+  <div class="right-container">
+    <button class="add-post-btn" (click)="onAddPostBtnClick()">
+      <ng-template [ngTemplateOutlet]="addPostIcon"></ng-template>
+      Create
+    </button>
+  </div>
+</div>
 <div class="posts-container">
   @for (post of sortedPosts(); track $index) {
     <post [post]="post"></post>
   }
 </div>
+
+<ng-template #addPostIcon>
+  <svg fill="none" height="12" viewBox="0 0 12 12" width="12" xmlns="http://www.w3.org/2000/svg">
+    <g class="icon-stroke icon-fill" stroke="#544D64">
+      <path d="M6 2V10" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+      <path d="M10 6L2 6" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.2"/>
+    </g>
+  </svg>
+</ng-template>
